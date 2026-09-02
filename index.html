@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site no Github</title>
+    <meta name="description" content="Portfólio visual com projetos e trabalhos selecionados.">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu portfólio</title>
 </head>
 <body>
-    <h1>site no Github</h1>
+    <header class="site-header" id="inicio">
+        <nav class="navigation container" aria-label="Navegação principal">
+            <a class="brand" href="#inicio">portfólio<span>.</span></a>
+            <a class="nav-link" href="#galeria">Ver trabalhos <span aria-hidden="true">↘</span></a>
+        </nav>
+
+        <div class="hero container">
+            <div class="hero-copy">
+                <p class="eyebrow">Criatividade em movimento</p>
+                <h1>Bem vindo ao<br><em>meu portfólio</em></h1>
+                <p class="hero-description">Uma seleção de imagens, ideias e projetos que transformam intenção em experiências visuais.</p>
+                <a class="primary-button" href="#galeria">Explorar galeria <span aria-hidden="true">↓</span></a>
+            </div>
+
+            <div class="carousel" aria-label="Destaques do portfólio">
+                <div class="carousel-track">
+                    <figure class="slide is-active"><img src="imeges/img1.jpg" alt="Projeto em destaque 1"></figure>
+                    <figure class="slide"><img src="imeges/img2.jpg" alt="Projeto em destaque 2"></figure>
+                    <figure class="slide"><img src="imeges/img3.jpg" alt="Projeto em destaque 3"></figure>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-button" type="button" data-direction="previous" aria-label="Imagem anterior" title="Imagem anterior">←</button>
+                    <div class="carousel-status" aria-live="polite"><span class="current-slide">01</span> / 03</div>
+                    <button class="carousel-button" type="button" data-direction="next" aria-label="Próxima imagem" title="Próxima imagem">→</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery-section container" id="galeria">
+            <div class="section-heading">
+                <div><p class="eyebrow">Arquivo visual</p><h2>Trabalhos selecionados</h2></div>
+                <p class="section-note">09 imagens · seleção aleatória</p>
+            </div>
+            <div class="gallery-grid" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer container">
+        <p>Feito para ideias que merecem ser vistas.</p>
+        <a href="#inicio">Voltar ao topo ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
