@@ -7,8 +7,8 @@ const gallery = document.querySelector('.gallery-grid');
 const portfolioImages = [
 	'img1.png',
 	'img2.png',
-	'img3.png',
-	'img4.jpg',
+	'img3.jpg',
+	'img4.png',
 	'img5.jpg',
 	'img6.jpg',
 	'img7.jpg',
